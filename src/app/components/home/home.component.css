@@ -1,0 +1,26 @@
+.head{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.head p{
+    text-align: center;
+    padding: 30px;
+
+}
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    
+}

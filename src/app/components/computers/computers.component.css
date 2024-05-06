@@ -1,0 +1,19 @@
+.btn{
+    margin-right: 30px;
+    
+}
+.container{
+    padding: 30px;
+}
+.card-text {
+    height: 50px; /* Adjust the height as needed (e.g., px, rem, em) */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+  .head{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}

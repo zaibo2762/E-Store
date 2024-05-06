@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "name":"Apple iPhone 13 Pro",
+        "category":"Iphone",
+        "imgurl":"/assets/Mobiles/1.jpg",
+        "descp":"Apple iPhone 13 Pro price in Pakistan is Rs. 297,899. Official dealers and warranty providers regulate the retail price of Apple mobile products in official warranty.",
+        "price":"$469"
+    },
+    {
+        "id":2,
+        "name":"Refurbished iPhone 13 128GB",
+        "category":"Iphone",
+        "imgurl":"/assets/Mobiles/2.jpeg",
+        "descp":"Originally released September 2021 Unlocked, SIM-Free, Model A24821 6.1-inch Super Retina XDR display with OLED A15 Bionic chip with 16-core Neural Engine Video playback: up to 19 hours",
+        "price":"$729"
+    },
+    {
+        "id":3,
+        "name":"Apple iPhone 13 mini (Blue 128GB + 4GB)",
+        "category":"Iphone",
+        "imgurl":"/assets/Mobiles/3.png",
+        "descp":"Durability that’s front and center. And edge to edge.A lightning-fast chip that leaves the competition behind. A huge leap in battery life  notice every day.",
+        "price":"$699"
+    },
+    {
+        "id":4,
+        "name":"Galaxy A05",
+        "category":"Samsung",
+        "imgurl":"/assets/Mobiles/4.avif",
+        "descp":"6.7 inch HD Display 50MP Camera Octa core processor",
+        "price":"$450"
+    },
+    {
+        "id":5,
+        "name":"Galaxy A53 5G",
+        "category":"Samsung",
+        "imgurl":"/assets/Mobiles/5.avif",
+        "descp":"*Image simulated for illustrative purpose.**Color and model availability may vary depending on country or carrier.",
+        "price":"$500"
+    },
+    {
+        "id":6,
+        "name":"Galaxy A13",
+        "category":"Samsung",
+        "imgurl":"/assets/Mobiles/6.avif",
+        "descp":"Expand your view to the 6.6-inch Infinity-V Display of Galaxy A13 and see what you've been missing. And with FHD+ technology, your everyday content looks sharp, crisp and clear.",
+        "price":"$700"
+    }
+]

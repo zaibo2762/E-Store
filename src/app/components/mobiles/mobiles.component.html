@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="head text-center">
+        <h1>Mobiles</h1>
+        <p>Explore our vast selection of sleek smartphones.</p>
+    </div>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @for (item of mobiles; track item) {
+      <div class="col mb-4" >
+        <div class="card">
+          <img src="{{item.imgurl}}" class="card-img-top" alt="..." height="300px">
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text">{{item.descp}}</p>
+            <p class="card-text"><strong>{{item.price}}</strong></p>
+            <a routerLink="/item" class="btn btn-primary">View</a>
+            <a href="#" class="btn btn-success">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+        }
+    </div>
+  </div>
+  
