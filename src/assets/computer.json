@@ -5,7 +5,7 @@
         "category":"Dell",
         "imgurl":"/assets/Computers/1.jpeg",
         "descp":"Perform personal & home office tasks Stream, browse & multitask Store digital content",
-        "price":"$469"
+        "price":"469"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@
         "category":"Dell",
         "imgurl":"/assets/Computers/2.avif",
         "descp":"Delight end users with the most intelligent devices.Work securely with multi-layered protections.Simplify IT with easy management support.Advance sustainability with innovative products and packaging.",
-        "price":"$729"
+        "price":"729"
     },
     {
         "id":3,
@@ -21,7 +21,7 @@
         "category":"Dell",
         "imgurl":"/assets/Computers/3.png",
         "descp":"Multitask between intensive programs Produce video, photography and music Create & edit digital content",
-        "price":"$699"
+        "price":"699"
     },
     {
         "id":4,
@@ -29,7 +29,7 @@
         "category":"Hp",
         "imgurl":"/assets/Computers/4.jpg",
         "descp":"Intel Core i5 4th 3.10GHZ 4GB DDR3 Ram 250GB SATA HDD DVD Rom Intel Q65 Express Chipset Built-In Sound, Lan",
-        "price":"$450"
+        "price":"450"
     },
     {
         "id":5,
@@ -37,7 +37,7 @@
         "category":"Hp",
         "imgurl":"/assets/Computers/5.jpeg",
         "descp":"Get the exceptional combination of responsive performance, connectivity and speed with a 12th Gen Intel® Core™ processor that lets you launch, create, and connect fast and reliably.",
-        "price":"$500"
+        "price":"500"
     },
     {
         "id":6,
@@ -45,6 +45,6 @@
         "category":"Hp",
         "imgurl":"/assets/Computers/6.jpg",
         "descp":"The 32 GB of RAM lets you multitask, enjoy demanding games and stream without a hiccup With 2 TB SSD drive you can store a hefty games library and have it load up in a jiffy",
-        "price":"$700"
+        "price":"700"
     }
 ]

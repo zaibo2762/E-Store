@@ -12,9 +12,9 @@
           <div class="card-body">
             <h5 class="card-title">{{item.name}}</h5>
             <p class="card-text">{{item.descp}}</p>
-            <p class="card-text"><strong>{{item.price}}</strong></p>
+            <p class="card-text"><strong>${{item.price }}</strong></p>
             <a routerLink="/item" class="btn btn-primary">View</a>
-            <a href="#" class="btn btn-success">Add to Cart</a>
+            <a (click)="onAddToCart(item)" class="btn btn-success">Add to Cart</a>
           </div>
         </div>
       </div>

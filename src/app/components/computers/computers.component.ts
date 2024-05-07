@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { CartService } from '../../services/cart.service';
 import computerData from 'C:/Users/zohai/OneDrive/Desktop/Angular/E-Store/src/assets/computer.json'
+import { Products } from '../../interface/products';
 
 interface Computers {
   id:number,
@@ -17,7 +19,15 @@ interface Computers {
   templateUrl: './computers.component.html',
   styleUrl: './computers.component.css'
 })
-export class ComputersComponent {
+export class ComputersComponent implements OnInit {
  computers:Computers[] = computerData;
+ constructor(private cartService : CartService){}
+ ngOnInit(): void {
+   
+ } 
  
+ onAddToCart(product: Products): void {
+  this.cartService.addToCart(product); 
+  
+}
 }

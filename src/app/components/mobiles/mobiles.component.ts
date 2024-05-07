@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { CartService } from '../../services/cart.service';
 import mobileData from 'C:/Users/zohai/OneDrive/Desktop/Angular/E-Store/src/assets/mobiles.json'
+import { Products } from '../../interface/products';
 
 
 
@@ -19,6 +21,16 @@ interface Mobiles {
   templateUrl: './mobiles.component.html',
   styleUrl: './mobiles.component.css'
 })
-export class MobilesComponent {
+export class MobilesComponent implements OnInit{
   mobiles:Mobiles[] = mobileData;
+  constructor(private cartService : CartService){}
+  ngOnInit(): void {
+    
+  } 
+  
+  onAddToCart(product: Products): void {
+   this.cartService.addToCart(product); 
+   
+ }
 }
+

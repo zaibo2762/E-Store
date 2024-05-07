@@ -5,7 +5,7 @@
         "category":"Huawei",
         "imgurl":"/assets/Tablets/1.jpg",
         "descp":"9.6 inch IPS display  Low-light and eye protection mode  4800 mAh battery Learn More",
-        "price":"$469"
+        "price":"469"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@
         "category":"Lenovo",
         "imgurl":"/assets/Tablets/2.png",
         "descp":"64GB Storage, 4GB Memory, Android 12, FHD Display",
-        "price":"$729"
+        "price":"729"
     },
     {
         "id":3,
@@ -21,7 +21,7 @@
         "category":"Huawei",
         "imgurl":"/assets/Tablets/3.jpg",
         "descp":"Durability that’s front and center. And edge to edge.A lightning-fast chip that leaves the competition behind. A huge leap in battery life  notice every day.",
-        "price":"$699"
+        "price":"699"
     },
     {
         "id":4,
@@ -29,7 +29,7 @@
         "category":"Samsung",
         "imgurl":"/assets/Tablets/4.webp",
         "descp":"Reliable",
-        "price":"$450"
+        "price":"450"
     },
     {
         "id":5,
@@ -37,7 +37,7 @@
         "category":"Samsung",
         "imgurl":"/assets/Tablets/5.jpeg",
         "descp":"Samsung Galaxy Tab S6 Lite S Pen included (Wi-Fi Model P610) (Angora Blue 128GB + 4GB) - Price & Specifications",
-        "price":"$500"
+        "price":"500"
     },
     {
         "id":6,
@@ -45,6 +45,6 @@
         "category":"Samsung",
         "imgurl":"/assets/Tablets/6.webp",
         "descp":"Samsung Galaxy Tab A8 PTA Approved Android Tablet, X200 10.5 INCH LCD Screen, 4GB RAM, 64GB Storage Brand New",
-        "price":"$700"
+        "price":"700"
     }
 ]

@@ -5,6 +5,7 @@ import { LaptopsComponent } from './components/laptops/laptops.component';
 import { MobilesComponent } from './components/mobiles/mobiles.component';
 import { TabletsComponent } from './components/tablets/tablets.component';
 import { ItemViewComponent } from './components/item-view/item-view.component';
+import { CartComponent } from './components/cart/cart.component';
 
 export const routes: Routes = [
     {
@@ -35,6 +36,10 @@ export const routes: Routes = [
     {
         path:"item",
         component:ItemViewComponent
+    },
+    {
+        path:"cart",
+        component:CartComponent
     },
 
 ];
