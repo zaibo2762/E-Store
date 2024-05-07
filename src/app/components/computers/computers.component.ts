@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CartService } from '../../services/cart.service';
-import computerData from 'C:/Users/zohai/OneDrive/Desktop/Angular/E-Store/src/assets/computer.json'
+import computerData from '../../../assets/computer.json'
 import { Products } from '../../interface/products';
 
 interface Computers {
