@@ -1,8 +1,8 @@
-[
+ [
     {
         "id":1,
         "name":"ThinkPad T14 Gen 4 (14, Intel)",
-        "category":"Lenovo",
+        "category":"laptop",
         "imgurl":"/assets/Laptops/1.jpeg",
         "descp":"Highly configurable powerhouse 14″ business laptop powered by up to Intel vPro® Highly configurable with an emphasis on security & speed",
         "price":"469"
@@ -10,7 +10,7 @@
     {
         "id":2,
         "name":"ThinkPad X13 Gen 4 (13, Intel)",
-        "category":"Lenovo",
+        "category":"laptop",
         "imgurl":"/assets/Laptops/2.jpeg",
         "descp":"Mobile power & productivity Compact business laptop for on-the-go power & performance Intel® Evo™-certified with Intel® vPro® & up to 13th Gen CPUs Smartphone-like connectivity options for fast downloads/uploads",
         "price":"729"
@@ -18,7 +18,7 @@
     {
         "id":3,
         "name":"ThinkPad L13 Gen 4 (13, Intel)",
-        "category":"Lenovo",
+        "category":"laptop",
         "imgurl":"/assets/Laptops/3.jpeg",
         "descp":"Lightweight laptop that packs power Up to powerful Intel vPro® platform for security & manageability Enhanced AI-biometric security with one-touch login Crisp, clear video conferences with FHD camera & Dolby Voice®",
         "price":"699"
@@ -26,7 +26,7 @@
     {
         "id":4,
         "name":"Acer Aspire 3 Core i5-12th ",
-        "category":"Acer",
+        "category":"laptop",
         "imgurl":"/assets/Laptops/4.jpeg",
         "descp":"Acer Aspire 3 Core i5-12th Gen 1235u 8GB RAM DDR4 256GB SSD 15.6",
         "price":"450"
@@ -34,7 +34,7 @@
     {
         "id":5,
         "name":"Acer 15.6",
-        "category":"Acer",
+        "category":"laptop",
         "imgurl":"/assets/Laptops/5.jpg",
         "descp":"Operating System: Windows 11 Home Operating System Architecture: 64-bit Processor: AMD Ryzen 5 5500U processor Hexa-core 2.10 GHz Graphics: AMD Radeon Graphics shared memory",
         "price":"500"
@@ -42,7 +42,7 @@
     {
         "id":6,
         "name":"acer Aspire Laptop 2023 ",
-        "category":"Acer",
+        "category":"laptop",
         "imgurl":"/assets/Laptops/6.jpg",
         "descp":"acer Aspire Laptop 2023 Newest 15.6 FHD, 11th Intel Core i3-1115G4 (up to 4.1GHz), 8GB RAM 512GB NVMe SSD, WiFi 6 USB-A&C Webcam HDMI, Windows 11, GM Accessories",
         "price":"700"

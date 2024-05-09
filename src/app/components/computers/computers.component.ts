@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { CartService } from '../../services/cart.service';
 import computerData from '../../../assets/computer.json'
 import { Products } from '../../interface/products';
@@ -21,7 +21,14 @@ interface Computers {
 })
 export class ComputersComponent implements OnInit {
  computers:Computers[] = computerData;
- constructor(private cartService : CartService){}
+
+ @Output() viewComputer = new EventEmitter<Computers>();
+ 
+  onSelectComputer(computer: Computers) {
+    this.router.navigate(['/computers', computer.id]);
+    
+  }
+ constructor(private cartService : CartService,private router:Router){}
  ngOnInit(): void {
    
  } 

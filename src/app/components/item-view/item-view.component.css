@@ -1,0 +1,12 @@
+.container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+h1{
+    text-decoration: underline;
+    color: black;
+}
