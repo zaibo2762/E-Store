@@ -1,17 +1,10 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { CartService } from '../../services/cart.service';
-import computerData from '../../../assets/computer.json'
 import { Products } from '../../interface/products';
+import { HttpClient } from '@angular/common/http';
 
-interface Computers {
-  id:number,
-  name:string,
-  category:string,
-  imgurl:string,
-  descp:string,
-  price:string
-}
+
 @Component({
   selector: 'app-computers',
   standalone: true,
@@ -20,21 +13,23 @@ interface Computers {
   styleUrl: './computers.component.css'
 })
 export class ComputersComponent implements OnInit {
- computers:Computers[] = computerData;
-
- @Output() viewComputer = new EventEmitter<Computers>();
- 
-  onSelectComputer(computer: Computers) {
-    this.router.navigate(['/computers', computer.id]);
-    
-  }
- constructor(private cartService : CartService,private router:Router){}
- ngOnInit(): void {
-   
- } 
- 
+ computers:Products[] = [];
  onAddToCart(product: Products): void {
   this.cartService.addToCart(product); 
   
 }
+ @Output() viewComputer = new EventEmitter<Products>();
+ 
+  onSelectComputer(computer: Products) {
+    this.router.navigate(['/computers', computer.id]);
+    
+  }
+ constructor(private cartService : CartService,private router:Router, private http : HttpClient){}
+ ngOnInit(): void {
+   this.http.get<Products[]>('https://localhost:7021/api/Product?category=computer').subscribe(data => {
+    this.computers= data;
+   })
+ } 
+ 
+ 
 }

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { Products } from '../../interface/products';
 import { ActivatedRoute } from '@angular/router';
-import computerData from '../../../assets/computer.json'
-
 import { CartService } from '../../services/cart.service';
 
 
@@ -16,7 +14,7 @@ import { CartService } from '../../services/cart.service';
 })
 export class ItemViewComponent {
   computer: Products | null = null; // Single product object or null
-  computers: Products[] = computerData  ; // Array of product objects
+  computers: Products[] = []  ; // Array of product objects
  
   
   constructor(

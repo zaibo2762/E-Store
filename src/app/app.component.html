@@ -1,7 +1,16 @@
-
+@if (router.url === '/login' || router.url ==="/" ) {
+  <main>
+  <app-login></app-login>
+</main>
+}@else if(router.url === '/signup'){
+  <main>
+  <app-signup></app-signup>
+</main>
+}@else {
 <header>
 <app-header></app-header>
 </header>
-<body>
+<main>
   <router-outlet></router-outlet>
-</body>
+</main>
+}

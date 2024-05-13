@@ -3,16 +3,10 @@ import { Router, RouterLink } from '@angular/router';
 import { CartService } from '../../services/cart.service';
 import laptopData from '../../../assets/laptop.json'
 import { Products } from '../../interface/products';
+import { HttpClient } from '@angular/common/http';
 
 
-interface Laptops {
-  id:number,
-  name:string,
-  category:string,
-  imgurl:string,
-  descp:string,
-  price:string
-}
+
 @Component({
   selector: 'app-laptops',
   standalone: true,
@@ -21,15 +15,17 @@ interface Laptops {
   styleUrl: './laptops.component.css'
 })
 export class LaptopsComponent  implements OnInit{
-  laptops:Laptops[] = laptopData;
-  constructor(private cartService : CartService,private router:Router){}
+  laptops:Products[] = [];
+  constructor(private cartService : CartService,private router:Router, private http:HttpClient){}
   ngOnInit(): void {
-    
+    this.http.get<Products[]>('https://localhost:7021/api/Product?category=laptop').subscribe(data => {
+      this.laptops= data;
+     })
   } 
-  @Output() viewComputer = new EventEmitter<Laptops>();
+  @Output() viewComputer = new EventEmitter<Products>();
 
-  onSelectComputer(computer: Laptops) {
-    this.router.navigate(['/computers', computer.id]);
+  onSelectComputer(laptop: Products) {
+    this.router.navigate(['/laptop', laptop.id]);
   }
   onAddToCart(product: Products): void {
    this.cartService.addToCart(product); 

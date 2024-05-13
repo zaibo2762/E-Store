@@ -9,7 +9,7 @@
         @for (item of cartItems; track $index) {
       <div class="col-md-6 col-lg-4 mb-3" >
         <div class="card">
-          <img [src]="item.imgurl" class="card-img-top" alt="{{ item.name }}" height="300px">
+          <img [src]="item.imgUrl" class="card-img-top" alt="{{ item.name }}" height="300px">
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text">${{ item.price }}</p>
