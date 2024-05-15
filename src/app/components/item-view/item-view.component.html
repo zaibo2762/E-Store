@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row">
-        @if (computer) {
+        @if (item) {
       <div class="col-md-12">
-        <img src="{{ computer.imgUrl }}" alt="{{ computer.name }}"  height="30%">
+        <img src="{{ item.imgUrl }}" alt="{{ item.name }}"  height="30%">
         <h1>Name:</h1>
-        <h2>{{ computer.name }}</h2>
+        <h2>{{ item.name }}</h2>
         <h1>Description:</h1>
-        <p>{{ computer.descp }}</p>
+        <p>{{ item.descp }}</p>
         
         <h1>Price:</h1>
-        <p><strong>${{ computer.price }}</strong></p>
-        <a (click)="onAddToCart(computer)"  class="btn btn-success">Add to Cart</a>
+        <p><strong>${{ item.price }}</strong></p>
+        <a (click)="addToCart(item)"  class="btn btn-success">Add to Cart</a>
       </div>}@else {
       <div class="col-md-12 text-center" >
         <p class="alert alert-secondary">Product not found.</p>

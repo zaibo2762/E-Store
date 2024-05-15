@@ -13,7 +13,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text">${{ item.price }}</p>
-            <button class="btn btn-danger btn-sm" (click)="removeFromCart(item)">Remove</button>
+            <button class="btn btn-danger btn-sm" (click)="removeFromCart($index)" >Remove</button>
           </div>
         </div>
       </div>

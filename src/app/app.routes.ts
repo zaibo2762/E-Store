@@ -51,6 +51,6 @@ export const routes: Routes = [
         path:"cart",
         component:CartComponent
     },
-    { path: 'computers/:id', component: ItemViewComponent }
+    { path: 'view/:id', component: ItemViewComponent }
 
 ];

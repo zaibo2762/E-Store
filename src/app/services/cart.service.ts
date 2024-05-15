@@ -1,23 +1,43 @@
 import { Injectable } from '@angular/core';
 import { Products } from '../interface/products';
+import { Subject } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  private cartItems: Products[] = []
-  addToCart(product: Products): void {
-    this.cartItems.push(product); // Add product to cart
-  }
-
-  getCartItems(): Products[] {
-    return this.cartItems.slice(); // Return a copy to avoid mutation
-  }
-  removeFromCart(product: Products): void {
-    const index = this.cartItems.findIndex(item => item.id === product.id); // Find item index
-    if (index !== -1) {
-      this.cartItems.splice(index, 1); // Remove item from cart
+  private cartItems: Products[] = [];
+  cartUpdated = new Subject<void>();
+  constructor() {
+    // Load cart items from local storage if available
+    const storedCartItems = localStorage.getItem('cartItems');
+    if (storedCartItems) {
+      this.cartItems = JSON.parse(storedCartItems);
     }
   }
-  constructor() { }
+  private saveCartItems() {
+    localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+  }
+
+  addToCart(item: Products) {
+    this.cartItems.push(item);
+    this.saveCartItems();
+    this.cartUpdated.next();
+  }
+
+  removeFromCart(index: number) {
+    this.cartItems.splice(index, 1);
+    this.saveCartItems();
+    this.cartUpdated.next();
+  }
+
+  getCartItems() {
+    return this.cartItems;
+  }
+
+  getTotalPrice() {
+    return this.cartItems.reduce((total, item) => total + parseInt(item.price), 0);
+  }
+  
 }

@@ -13,22 +13,18 @@ export class CartComponent implements OnInit {
   cartItems: Products[] = [];
   totalPrice: number = 0;
 
-  constructor(private cartService: CartService) {}
-
+  constructor(private cartService: CartService) {
+    this.cartItems = this.cartService.getCartItems();
+    this.totalPrice = this.cartService.getTotalPrice();
+  }
   ngOnInit(): void {
-    this.cartItems = this.cartService.getCartItems(); 
-    this.calculateTotalPrice();
-  }
-  removeFromCart(product: Products): void {
-    const index = this.cartItems.findIndex(item => item.id === product.id);
-    if (index !== -1) {
-      this.cartItems.splice(index, 1);
-      this.calculateTotalPrice(); // Recalculate total after removal
-    }
+    
   }
 
-  calculateTotalPrice(): void {
-    this.totalPrice = this.cartItems.reduce((acc, item) => acc + (parseInt(item.price)  || 1), 0); // Consider quantity (if defined)
+  removeFromCart(index: number) {
+    this.cartService.removeFromCart(index);
+    this.cartItems = this.cartService.getCartItems();
+    this.totalPrice = this.cartService.getTotalPrice();
   }
   
 

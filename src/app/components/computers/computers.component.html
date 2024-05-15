@@ -13,8 +13,8 @@
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text">{{ item.descp }}</p>
             <p class="card-text"><strong>${{ item.price }}</strong></p>
-            <a  (click)="onSelectComputer(item)" class="btn btn-primary">View</a>
-            <a  (click)="onAddToCart(item)" class="btn btn-success">Add to Cart</a>
+            <a  (click)="viewItem(item.id)" class="btn btn-primary">View</a>
+            <a  (click)="addToCart(item)" class="btn btn-success">Add to Cart</a>
           </div>
         </div>
       </div>
